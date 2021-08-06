@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Responsive Side Navbar</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-container">
+        <div class="logo">
+          <i class="bx bxs-pyramid bx-lg"></i>
+          <div class="logo-name">LazyCoder</div>
+        </div>
+        <i class="bx bx-menu" id="menu-btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#">
+            <i class="bx bx-search" id="search-icon"></i>
+            <input
+              type="text"
+              name="search"
+              id="search-field"
+              placeholder="Search"
+            />
+          </a>
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-grid-alt"></i>
+            <span class="link-name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-message"></i>
+            <span class="link-name">Messages</span>
+          </a>
+          <span class="tooltip">Messages</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-pie-chart"></i>
+            <span class="link-name">Analytics</span>
+          </a>
+          <span class="tooltip">Analytics</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-file"></i>
+            <span class="link-name">Docs</span>
+          </a>
+          <span class="tooltip">Docs</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cart"></i>
+            <span class="link-name">Cart</span>
+          </a>
+          <span class="tooltip">Cart</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-cuboid"></i>
+            <span class="link-name">Orders</span>
+          </a>
+          <span class="tooltip">Orders</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="link-name">Settings</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+      </ul>
+      <div class="profile-content">
+        <div class="profile">
+          <div class="profile-details">
+            <!-- Profile details (Image, Name etc.) -->
+            <img
+              class="profile-photo"
+              src="images/profilePhoto.jpg"
+              alt="Profile Photo"
+            />
+            <div class="name-job">
+              <div class="name">Manuj Gogoi</div>
+              <div class="job">Software Developer</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="logout"></i>
+        </div>
+      </div>
+    </div>
+    <div class="home-content">
+      <h1>Home content</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quos
+        eligendi maxime eveniet eius, nesciunt possimus perspiciatis velit magni
+        nemo error asperiores sit quis perferendis animi delectus impedit.
+        Veritatis eveniet veniam incidunt beatae possimus autem ab, quasi minus
+        nemo asperiores assumenda voluptatibus, aut architecto porro totam odio
+        consequuntur cum libero ipsam a quo tempore debitis? Facere distinctio
+        itaque laborum suscipit reprehenderit enim quod magnam. Illum,
+        dignissimos doloremque, mollitia obcaecati recusandae quia quibusdam
+        dolorum suscipit quo esse omnis, magni modi vel numquam minima doloribus
+        harum. Eius voluptates exercitationem inventore quos officia explicabo
+        cupiditate atque nostrum perspiciatis vel aperiam quis, consectetur
+        deserunt, labore ea sit veniam laboriosam voluptate tempora laudantium,
+        totam fugiat! Necessitatibus omnis iste totam dicta corrupti cupiditate
+        exercitationem assumenda, voluptatem ad quo quia optio quaerat fugit
+        cumque nesciunt nulla quibusdam. Dolore recusandae adipisci repudiandae
+        eligendi necessitatibus provident corporis. Enim, aspernatur!
+        Recusandae, asperiores possimus soluta quidem iste ipsam culpa excepturi
+        commodi reprehenderit cupiditate voluptatibus provident. Harum illo
+        velit sapiente dolor molestiae repellendus nihil quo. Magni explicabo
+        modi quasi dolor veritatis delectus, quam dolores reiciendis tempora
+        facere quidem, quaerat id aut expedita minima ipsa repudiandae eius
+        consequuntur, esse unde inventore dolorum fugiat distinctio? Nisi magni
+        voluptatum facilis placeat, corrupti aperiam quis explicabo.
+      </p>
+    </div>
+    <script>
+      let menuBtn = document.querySelector("#menu-btn");
+      let sidebar = document.querySelector(".sidebar");
+      let searchBtn = document.querySelector("#search-icon");
+
+      menuBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+      };
+      searchBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
